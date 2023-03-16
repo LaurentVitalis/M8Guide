@@ -1,7 +1,10 @@
-# M8 Shortcut Guide
+# M8 Shortcuts Guide
+
+<img src="Guide.jpg" width="500">
+
 A foldable 4-page mini guide containing shortcuts for the Dirtywave M8.
 
-It can be printed on a letter sheet and be stored in your M8 case once folded.
+Printable on a letter paper sheet and can be stored in your M8 case once folded.
 
 ## Instructions
 
