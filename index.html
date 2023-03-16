@@ -1,0 +1,105 @@
+<html>
+<head>
+	<script src="jquery-3.6.3.min.js"></script>
+	<script src="script.js"></script>
+	<link href="fonts/proxima-nova-2" rel="stylesheet">
+	<link href="fonts/proxima-nova-condensed" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles.css">                             
+</head>
+<body>
+
+<div class="guide">
+	<div class="row">
+		<div class="cut"></div>
+		<div class="fold"></div>
+		<div class="cut rotate90"></div>
+	</div>
+	<div class="row">
+		<div class="fold rotate90"></div>
+		<div>
+			<div class="spread" id="recto"></div>
+			<div class="spread" id="verso"></div>
+		</div>
+		<div class="fold rotate90"></div>
+	</div >
+	<div class="row">
+		<div class="cut rotate270"></div>
+		<div class="fold"></div>
+		<div class="cut rotate180"></div>
+	</div>	
+</div>	
+
+<div class="to_hide">
+	<div id="template" class="action">
+		<div class="action_text">
+			<span class="name">Screen Navigation</span>&nbsp;<span class="secondary"></span><br>
+			<span class="description">hold SHIFT + tap [ UP or DOWN or LEFT or RIGHT ]</span><br>
+			<span class="extra"></span>
+		</div>
+		<div class="action_buttons">
+	<svg xmlns="http://www.w3.org/2000/svg" width="28" height="21" fill="none" viewBox="0 0 28 21" class="buttons">
+	  <g class="button_pad">
+		<g class="play_button">
+		  <rect width="6" height="5.5" x="13" y="15" fill="#CCC" class="placeholder" rx=".5"/>
+		  <rect width="6" height="5.5" x="13" y="15" fill="#000" class="bkg" rx=".5"/>
+		  <path fill="#fff" d="M17.317 19.299v-.82h-1.023c.75-.488.995-.837.995-1.26 0-.624-.533-1.071-1.349-1.071-.438 0-.966.144-1.329.526l.518.623c.241-.2.495-.32.83-.32.203 0 .363.092.363.241 0 .233-.136.35-1.574 1.35v.73h2.569Z" class="second"/>
+		  <path fill="#fff" d="M16.883 19.298v-3.104h-.82l-1.202 1.164.537.554.533-.522v1.908h.952Z" class="first"/>
+		  <path fill="#000" fill-rule="evenodd" d="M13.5 15a.5.5 0 0 0-.5.5V20a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 .5-.5v-4.5a.5.5 0 0 0-.5-.5h-5Zm2 .75v2.293l-.896-.896-.708.707L16 19.957l2.104-2.103-.708-.707-.896.896V15.75h-1Z" class="hold" clip-rule="evenodd"/>
+		</g>
+		<g class="shift_button">
+		  <rect width="6" height="5.5" x="6.5" y="15" fill="#CCC" class="placeholder" rx=".5"/>
+		  <rect width="6" height="5.5" x="6.5" y="15" fill="#000" class="bkg" rx=".5"/>
+		  <path fill="#fff" d="M10.817 19.299v-.82H9.794c.75-.488.995-.837.995-1.26 0-.624-.533-1.071-1.349-1.071-.438 0-.966.144-1.329.526l.519.623c.24-.2.495-.32.83-.32.202 0 .362.092.362.241 0 .233-.136.35-1.574 1.35v.73h2.569Z" class="second"/>
+		  <path fill="#fff" d="M10.383 19.298v-3.104h-.82L8.36 17.358l.537.554.533-.522v1.908h.952Z" class="first"/>
+		  <path fill="#000" fill-rule="evenodd" d="M7 15a.5.5 0 0 0-.5.5V20a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 .5-.5v-4.5a.5.5 0 0 0-.5-.5H7Zm2 .75v2.293l-.896-.896-.708.707L9.5 19.957l2.104-2.103-.708-.707-.896.896V15.75H9Z" class="hold" clip-rule="evenodd"/>
+		</g>
+		<g class="up_button">
+		  <rect width="6" height="5.5" x="6.5" y="2.5" fill="#CCC" class="placeholder" rx=".5"/>
+		  <rect width="6" height="5.5" x="6.5" y="2.5" fill="#000" class="bkg" rx=".5"/>
+		  <path fill="#fff" d="M10.817 6.798V5.98H9.794c.75-.488.995-.837.995-1.26 0-.624-.533-1.071-1.349-1.071-.438 0-.966.144-1.329.526l.519.623c.24-.2.495-.32.83-.32.202 0 .362.092.362.241 0 .233-.136.35-1.574 1.35v.73h2.569Z" class="second"/>
+		  <path fill="#fff" d="M10.383 6.798V3.694h-.82L8.36 4.858l.537.554.533-.522v1.908h.952Z" class="first"/>
+		  <path fill="#000" fill-rule="evenodd" d="M7 2.5a.5.5 0 0 0-.5.5v4.5A.5.5 0 0 0 7 8h5a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5H7Zm2 .75v2.293l-.896-.897-.708.708L9.5 7.457l2.104-2.103-.708-.708-.896.897V3.25H9Z" class="hold" clip-rule="evenodd"/>
+		</g>
+		<g class="right_button">
+		  <rect width="6" height="5.5" x="13" y="8.5" fill="#CCC" class="placeholder" rx=".5"/>
+		  <rect width="6" height="5.5" x="13" y="8.5" fill="#000" class="bkg" rx=".5"/>
+		  <path fill="#fff" d="M17.317 12.799v-.82h-1.023c.75-.488.995-.837.995-1.26 0-.624-.533-1.071-1.349-1.071-.438 0-.966.144-1.329.526l.518.623c.241-.2.495-.32.83-.32.203 0 .363.092.363.241 0 .233-.136.35-1.574 1.35v.73h2.569Z" class="second"/>
+		  <path fill="#fff" d="M16.883 12.798V9.694h-.82l-1.202 1.164.537.554.533-.522v1.908h.952Z" class="first"/>
+		  <path fill="#000" fill-rule="evenodd" d="M13.5 8.5a.5.5 0 0 0-.5.5v4.5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 .5-.5V9a.5.5 0 0 0-.5-.5h-5Zm2 .75v2.293l-.896-.896-.708.707L16 13.457l2.104-2.103-.708-.707-.896.896V9.25h-1Z" class="hold" clip-rule="evenodd"/>
+		</g>
+		<g class="down_button">
+		  <rect width="6" height="5.5" x="6.5" y="8.5" fill="#CCC" class="placeholder" rx=".5"/>
+		  <rect width="6" height="5.5" x="6.5" y="8.5" fill="#000" class="bkg" rx=".5"/>
+		  <path fill="#fff" d="M10.817 12.799v-.82H9.794c.75-.488.995-.837.995-1.26 0-.624-.533-1.071-1.349-1.071-.438 0-.966.144-1.329.526l.519.623c.24-.2.495-.32.83-.32.202 0 .362.092.362.241 0 .233-.136.35-1.574 1.35v.73h2.569Z" class="second"/>
+		  <path fill="#fff" d="M10.383 12.798V9.694h-.82L8.36 10.858l.537.554.533-.522v1.908h.952Z" class="first"/>
+		  <path fill="#000" fill-rule="evenodd" d="M7 8.5a.5.5 0 0 0-.5.5v4.5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 .5-.5V9a.5.5 0 0 0-.5-.5H7Zm2 .75v2.293l-.896-.896-.708.707L9.5 13.457l2.104-2.103-.708-.707-.896.896V9.25H9Z" class="hold" clip-rule="evenodd"/>
+		</g>
+		<g class="left_button">
+		  <rect width="6" height="5.5" y="8.5" fill="#CCC" class="placeholder" rx=".5"/>
+		  <rect width="6" height="5.5" y="8.5" fill="#000" class="bkg" rx=".5"/>
+		  <path fill="#fff" d="M4.317 12.799v-.82H3.294c.75-.488.995-.837.995-1.26 0-.624-.533-1.071-1.349-1.071-.438 0-.966.144-1.329.526l.519.623c.24-.2.495-.32.83-.32.202 0 .362.092.362.241 0 .233-.136.35-1.574 1.35v.73h2.569Z" class="second"/>
+		  <path fill="#fff" d="M3.883 12.798V9.694h-.82L1.86 10.858l.537.554.533-.522v1.908h.952Z" class="first"/>
+		  <path fill="#000" fill-rule="evenodd" d="M.5 8.5A.5.5 0 0 0 0 9v4.5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 .5-.5V9a.5.5 0 0 0-.5-.5h-5Zm2 .75v2.293l-.896-.896-.708.707L3 13.457l2.104-2.103-.708-.707-.896.896V9.25h-1Z" class="hold" clip-rule="evenodd"/>
+		</g>
+		<g class="edit_button">
+		  <rect width="6" height="5.5" x="20.5" y="1.5" fill="#CCC" class="placeholder" rx=".5"/>
+		  <rect width="6" height="5.5" x="20.5" y="1.5" fill="#000" class="bkg" rx=".5"/>
+		  <path fill="#fff" d="M24.817 5.798V4.98h-1.023c.75-.488.995-.837.995-1.26 0-.624-.533-1.071-1.349-1.071-.438 0-.966.144-1.329.526l.518.623c.241-.2.495-.32.83-.32.203 0 .363.092.363.241 0 .233-.136.35-1.574 1.35v.73h2.569Z" class="second"/>
+		  <path fill="#fff" d="M24.383 5.798V2.694h-.82L22.36 3.858l.538.554.533-.522v1.908h.952Z" class="first"/>
+		  <path fill="#000" fill-rule="evenodd" d="M21 1.5a.5.5 0 0 0-.5.5v4.5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 .5-.5V2a.5.5 0 0 0-.5-.5h-5Zm2 .75v2.293l-.896-.897-.708.708L23.5 6.457l2.104-2.103-.708-.708-.896.897V2.25h-1Z" class="hold" clip-rule="evenodd"/>
+		</g>
+		<g class="option_button">
+		  <rect width="6" height="5.5" x="14" y="1.5" fill="#CCC" class="placeholder" rx=".5"/>
+		  <rect width="6" height="5.5" x="14" y="1.5" fill="#000" class="bkg" rx=".5"/>
+		  <path fill="#fff" d="M18.317 5.798V4.98h-1.023c.75-.488.995-.837.995-1.26 0-.624-.533-1.071-1.349-1.071-.438 0-.966.144-1.329.526l.518.623c.241-.2.495-.32.83-.32.203 0 .363.092.363.241 0 .233-.136.35-1.574 1.35v.73h2.569Z" class="second"/>
+		  <path fill="#fff" d="M17.883 5.798V2.694h-.82L15.86 3.858l.537.554.533-.522v1.908h.952Z" class="first"/>
+		  <path fill="#000" fill-rule="evenodd" d="M14.5 1.5a.5.5 0 0 0-.5.5v4.5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 .5-.5V2a.5.5 0 0 0-.5-.5h-5Zm2 .75v2.293l-.896-.897-.708.708L17 6.457l2.104-2.103-.708-.708-.896.897V2.25h-1Z" class="hold" clip-rule="evenodd"/>
+		</g>
+		<path fill="#000" d="M22.5 0a.5.5 0 0 0-.5.5V1h4.5a.5.5 0 0 1 .5.5v4h.5A.5.5 0 0 0 28 5V.5a.5.5 0 0 0-.5-.5h-5Z" class="double_tap"/>
+	  </g>
+	</svg>
+		</div>
+	</div>
+</div>
+</body>
+</html>

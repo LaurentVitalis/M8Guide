@@ -1,0 +1,224 @@
+body
+{
+  margin: 0mm 0mm 0mm 0mm;
+  -webkit-print-color-adjust:exact !important;
+  print-color-adjust:exact !important;
+  
+  font-size: 0.87em;
+}
+
+.guide
+{
+	display: table;
+}
+
+.row
+{
+	display: table-row;
+}
+
+.row > div
+{
+	display: table-cell;
+}
+
+.page
+{
+	width: 90mm;
+	height: 118mm;
+	padding: 3mm;
+	padding-left: 5mm;
+	padding-top: 4mm;
+	border: dotted 0.125mm #eee;
+}
+
+#recto > .page
+{
+	transform: rotateZ(180deg);
+}
+
+.spread
+{
+	display: flex;
+	width: 180mm;
+}
+
+.section
+{
+	font-family: 'Proxima Nova';
+	font-weight: 800;
+	font-size: 1.0em;
+	text-transform: uppercase;
+}
+
+.section:before
+{
+	content: "\2022";
+	margin-right: 1mm;
+}
+
+.section:not(:first-child)
+{
+	margin-top: 1.75mm;
+	margin-bottom: 1mm;
+}
+
+.action
+{
+	display: table-row;
+}
+.action .name
+{
+	font-family: 'Proxima Nova';
+	font-weight: 600;
+}
+
+.action_text
+{
+	width: 66mm;
+	margin-bottom:0.5mm;
+	margin-left: 2mm;
+}
+
+.action .secondary
+{
+	font-family: 'Proxima Nova';
+	font-weight: 300;
+}
+
+.action .description, .action .extra
+{
+	font-family: 'Proxima Nova Condensed';
+	font-weight: 300;
+	color: #AAA;
+	font-size: 0.7em;
+}
+
+.buttons
+{
+	width: 9.5mm;
+	height: 100%;
+}
+
+.action_buttons
+{
+	padding-left: 4mm;
+	vertical-align: middle;
+	display: table-cell;
+}
+
+.bkg, .hold, .first, .second, .double_tap
+{
+	opacity: 0;
+}
+
+.left .left_button .bkg,
+.lefthold .left_button .hold,
+.left1st .left_button .first,
+.left1st .left_button .bkg,
+.left2nd .left_button .second,
+.left2nd .left_button .bkg,
+.right .right_button .bkg,
+.righthold .right_button .hold,
+.right1st .right_button .first,
+.right1st .right_button .bkg,
+.right2nd .right_button .second,
+.right2nd .right_button .bkg,
+.up .up_button .bkg,
+.uphold .up_button .hold,
+.up1st .up_button .first,
+.up1st .up_button .bkg,
+.up2nd .up_button .second,
+.up2nd .up_button .bkg,
+.down .down_button .bkg,
+.downhold .down_button .hold,
+.down1st .down_button .first,
+.down1st .down_button .bkg,
+.down2nd .down_button .second,
+.down2nd .down_button .bkg,
+.option .option_button .bkg,
+.optionhold .option_button .hold,
+.option1st .option_button .first,
+.option1st .option_button .bkg,
+.option2nd .option_button .second,
+.option2nd .option_button .bkg,
+.edit .edit_button .bkg,
+.edithold .edit_button .hold,
+.edit1st .edit_button .first,
+.edit1st .edit_button .bkg,
+.edit2nd .edit_button .second,
+.edit2nd .edit_button .bkg,
+.play .play_button .bkg,
+.playhold .play_button .hold,
+.play1st .play_button .first,
+.play1st .play_button .bkg,
+.play2nd .play_button .second,
+.play2nd .play_button .bkg,
+.shift .shift_button .bkg,
+.shifthold .shift_button .hold,
+.shift1st .shift_button .first,
+.shift1st .shift_button .bkg,
+.shift2nd .shift_button .second,
+.shift2nd .shift_button .bkg
+{
+	opacity: 1;
+}
+
+.lefthold .left_button .placeholder,
+.righthold .right_button .placeholder,
+.uphold .up_button .placeholder,
+.downhold .down_button .placeholder,
+.optionhold .option_button .placeholder,
+.edithold .edit_button .placeholder,
+.playhold .play_button .placeholder,
+.shifthold .shift_button .placeholder
+{
+	opacity: 0;
+}
+
+.double .double_tap
+{
+	opacity: 1;
+}
+
+.rotate90
+{
+	transform: rotateZ(90deg);
+}
+
+.rotate180
+{
+	transform: rotateZ(180deg);
+}
+
+.rotate270
+{
+	transform: rotateZ(270deg);
+}
+
+.cut:after, .fold:after
+{
+    background-size: 7mm 7mm;
+    display: inline-block;
+    width: 7mm; 
+    height: 7mm;
+    content:"";	
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+.cut:after
+{
+	background-image: url('cutmark.svg');
+}
+
+.fold:after
+{
+	background-image: url('foldmark.svg');
+}
+
+.fold
+{
+	text-align: center;
+	vertical-align: middle;
+}
