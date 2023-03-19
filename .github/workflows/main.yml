@@ -1,6 +1,0 @@
-- name: html to pdf
-  uses: fifsky/html-to-pdf-action@master
-  with:
-    htmlFile: ./public/index.html
-    outputFile: ./public/guide_automated.pdf
-    pdfOptions: '{"format": "US Letter", "margin": {"top": ".25inch", "left": ".25inch", "right": ".25inch", "bottom": ".25inch"}}'
