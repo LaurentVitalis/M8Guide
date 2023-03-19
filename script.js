@@ -3,7 +3,7 @@ var pages = [
 	{name:"Navigation",actions:[
 		{name:"Move Cursor",description:"UP or DOWN or LEFT or RIGHT", command:"up down left right", page:7},
 		{name:"Screen Navigation",description:"hold SHIFT + [ UP or DOWN or LEFT or RIGHT ]", command:"shifthold up down left right", page:7}]},
-	{name:"Edition",actions:[
+	{name:"Editing",actions:[
 		{name:"Change Value",secondary:"fine",description:"hold EDIT + [ LEFT or RIGHT ]", command:"edithold left right", page:7},
 		{name:"Change Value",secondary:"coarse",description:"hold EDIT + [ UP or DOWN ]", command:"edithold up down", page:7},
 		{name:"Cut Value",secondary:"or set to default",description:"EDIT + OPTION", command:"edit option", page:7},
@@ -45,10 +45,10 @@ var pages = [
 		{name:"Interpolate Values",description:"in selection mode (single column), hold SHIFT + EDIT", command:"shifthold edit", page: 15},
 		{name:"Move Selection",description:"in selection mode (multi column), hold EDIT + [ UP or DOWN]", command:"edithold up down", page: 15}]}
 		]},{sections: [
-	{name:"Intrument Screen",actions:[
+	{name:"Instrument Screen",actions:[
 		{name:"Preview Instrument",description:"PLAY", command:"play"},
 		{name:"Copy Instrument",description:"hold SHIFT + OPTION", command:"shifthold option"},
-		{name:"Jump to Intrument",secondary:"previous or next",description:"OPTION + [ LEFT or RIGHT ] ", command:"optionhold left right"},
+		{name:"Jump to Instrument",secondary:"previous or next",description:"OPTION + [ LEFT or RIGHT ] ", command:"optionhold left right"},
 		{name:"Edit Parameter",description:"EDIT + [ Touchscreen LEFT and RIGHT ]", command:"edithold"},
 		{name:"Map Parameter",description:"OPTION + [ Touchscreen LEFT and RIGHT or UP and DOWN ]", command:"optionhold"}]},
 	{name:"Table Screen",actions:[
