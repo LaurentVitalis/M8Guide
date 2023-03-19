@@ -1,6 +1,0 @@
-- name: html to pdf
-  uses: LukaszLapaj/html-to-pdf-action@master
-  with:
-    htmlFile: ./index.html
-    outputFile: ./guide_automated.pdf
-    pdfOptions: '{"format": "US Letter", "margin": {"top": "0.25", "left": "0.25", "right": "0.25", "bottom": "0.25"}}'
