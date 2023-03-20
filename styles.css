@@ -45,7 +45,7 @@ body
 
 .section
 {
-	font-family: 'Proxima Nova';
+	font-family: 'SofiaSans';
 	font-weight: 800;
 	font-size: 1.0em;
 	text-transform: uppercase;
@@ -69,7 +69,7 @@ body
 }
 .action .name
 {
-	font-family: 'Proxima Nova';
+	font-family: 'SofiaSans';
 	font-weight: 600;
 }
 
@@ -82,13 +82,13 @@ body
 
 .action .secondary
 {
-	font-family: 'Proxima Nova';
+	font-family: 'SofiaSans';
 	font-weight: 300;
 }
 
 .action .description, .action .extra
 {
-	font-family: 'Proxima Nova Condensed';
+	font-family: 'SofiaSansCond';
 	font-weight: 300;
 	color: #AAA;
 	font-size: 0.7em;
