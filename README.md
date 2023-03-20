@@ -1,6 +1,6 @@
 # M8 Shortcuts Guide
 
-<img src="Guide.jpg" width="500">
+<img src="guide.jpg" width="500">
 
 A foldable 4-page mini guide containing shortcuts for the Dirtywave M8.
 
