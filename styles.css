@@ -7,6 +7,18 @@ body
   font-size: 0.87em;
 }
 
+.version
+{
+	position: absolute;
+	font-family: 'SofiaSans';
+	font-weight: 500;
+	font-size: 1.0em;
+	left: 190mm;
+	top: 10mm;
+	writing-mode: sideways-rl;
+	text-orientation: mixed;
+}
+
 .guide
 {
 	display: table;

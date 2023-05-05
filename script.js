@@ -14,13 +14,9 @@ var pages = [
 		{name:"Mute Current Track",description:"hold OPTION + SHIFT",extra:"(latch mute by releasing OPTION first)", command:"optionhold shift", page:11},
 		{name:"Solo Current Track",description:"hold OPTION + PLAY",extra:"(latch solo by releasing OPTION first)", command:"optionhold play", page:11},
 		{name:"Clear All Mute",secondary:" and solos",description:"hold OPTION + hold SHIFT + PLAY", command:"optionhold shifthold play", page:11}]}
+
 	]},{sections: [
-	{name:"Selection",actions:[
-		{name:"Enter Selection Mode",description:"hold SHIFT + OPTION",extra:"(tap OPTION to cycle through modes)", command:"shifthold option" ,page:7},
-		{name:"Copy Selection",secondary:"(exit mode)",description:"OPTION", command:"option" ,page:7},
-		{name:"Paste Copy Buffer",description:"hold SHIFT + EDIT", command:"shifthold edit" ,page:7}]},
 	{name:"Song Screen",actions:[
-		{name:"Play Song",secondary:"at cursor position",description:"PLAY", command:"play", page: 11},
 		{name:"Cue Row",secondary:"while playing",description:"hold LEFT + PLAY", command:"lefthold play", page:11},
 		{name:"Create",secondary:"new chain",description:"double-tap EDIT", command:"edit double", page: 11},
 		{name:"Clone and Paste",secondary:"chain alone",description:"hold SHIFT + OPTION then EDIT", command:"shifthold option1st edit2nd", page: 11},
@@ -28,22 +24,32 @@ var pages = [
 		{name:"Solo Tracks",secondary:"left or right",description:"hold OPTION + [ LEFT or RIGHT ] ", command:"optionhold left right", page:11},
 		{name:"Jump 16 Rows",secondary:"up or down",description:"hold OPTION + [ UP or DOWN ] ", command:"optionhold up down", page:11},
 		{name:"Move Selection", description:"in selection mode, hold EDIT + [ UP or DOWN ]",command:"edithold up down", page: 11},
-		{name:"Render Selection", description:"in selection mode, double-tap EDIT", command:"edit double", page: 11}]}
-	]},{sections: [
+		{name:"Render Selection", description:"in selection mode, double-tap EDIT", command:"edit double", page: 11}]},
 	{name:"Chain Screen",actions:[
-		{name:"Play Chain",secondary:"from cursor position",description:"PLAY", command:"play", page: 13},
 		{name:"Create",secondary:"new phrase",description:"double-tap EDIT", command:"edit double"},
 		{name:"Clone and Paste",secondary:"phrase",description:"hold SHIFT + OPTION then EDIT", command:"shifthold option1st edit2nd", page: 13},
 		{name:"Jump to Track",secondary:"left or right",description:"hold OPTION + [ LEFT or RIGHT ] ", command:"optionhold left right", page: 13},
-		{name:"Jump to Chain",secondary:"previous or next",description:"hold OPTION + [ UP or DOWN ]", command:"optionhold up down", page: 13}]},
+		{name:"Jump to Chain",secondary:"previous or next",description:"hold OPTION + [ UP or DOWN ]", command:"optionhold up down", page: 13}]}
+
+	]},{sections: [
 	{name:"Phrase Screen",actions:[
-		{name:"Play Phrase",secondary:"from cursor position",description:"PLAY", command:"play", page: 15},
 		{name:"Create",secondary:"new instrument",description:"on instrument column, EDIT (double-tap)", command:"edit double", page: 15},
 		{name:"Clone and Paste",secondary:"instrument",description:"hold SHIFT + OPTION then EDIT", command:"shifthold option1st edit2nd", page: 15},
 		{name:"Jump to Track",secondary:"left or right",description:"hold OPTION + [ LEFT or RIGHT ] ", command:"optionhold left right", page: 15},
 		{name:"Jump to Phrase",secondary:"previous or next",description:"hold OPTION + [ UP or DOWN ] ", command:"optionhold up down", page: 15},
-		{name:"Interpolate Values",description:"in selection mode (single column), hold SHIFT + EDIT", command:"shifthold edit", page: 15},
-		{name:"Move Selection",description:"in selection mode (multi column), hold EDIT + [ UP or DOWN]", command:"edithold up down", page: 15}]}
+		{name:"Interpolate",description:"in selection mode (single column), hold SHIFT + EDIT", command:"shifthold edit", page: 15},
+		{name:"Move",secondary:"selection",description:"in selection mode (multi column), hold EDIT + [ UP or DOWN]", command:"edithold up down", page: 15},
+
+		{name:"Note Fill",secondary:"",description:"in selection mode (note column), hold OPTION + LEFT", command:"optionhold left", page: 15},
+		{name:"Random Fill",description:"in selection mode (note column), hold OPTION + RIGHT", extra: "velocity can be randomized if selected", command:"optionhold right", page: 15},
+		{name:"Randomize Notes",secondary:"Up or Down",description:"in selection mode (note column), hold OPTION + [UP or DOWN]", command:"optionhold up down", page: 15}]},
+	{name:"Selection",actions:[
+		{name:"Enter Selection Mode",description:"hold SHIFT + OPTION",extra:"(tap OPTION to cycle through modes)", command:"shifthold option" ,page:7},
+		{name:"Copy Selection",secondary:"(exit mode)",description:"OPTION", command:"option" ,page:7},
+		{name:"Paste Copy Buffer",description:"hold SHIFT + EDIT", command:"shifthold edit" ,page:7}
+		]}
+
+		
 		]},{sections: [
 	{name:"Instrument Screen",actions:[
 		{name:"Preview Instrument",description:"PLAY", command:"play"},
@@ -59,7 +65,9 @@ var pages = [
 		{name:"Delete Selected File",description:"EDIT + OPTION", command:"edit option", page:9}]},
 	{name:"Mixer Screen", actions:[
 		{name:"Create Snapshot",description:"hold SHIFT + OPTION", command:"shifthold option", page:27},
-		{name:"Recall Snapshot",description:"hold SHIFT + EDIT", command:"shifthold edit", page:27}]}]}]
+		{name:"Recall Snapshot",description:"hold SHIFT + EDIT", command:"shifthold edit", page:27}]}
+		
+	]}]
 	
 $( document ).ready(function() {
 		
